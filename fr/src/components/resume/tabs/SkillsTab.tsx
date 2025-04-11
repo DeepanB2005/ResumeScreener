@@ -1,8 +1,7 @@
-
 import React from 'react';
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import IconProvider from '@/components/IconProvider';
+import { Wrench } from 'lucide-react';
 
 interface SkillsTabProps {
   skills: string[];
@@ -12,7 +11,7 @@ const SkillsTab: React.FC<SkillsTabProps> = ({ skills }) => {
   return (
     <Card className="p-6 glossy-card shadow-md">
       <h2 className="text-xl font-medium mb-4 flex items-center gap-2 border-b pb-2">
-        <IconProvider name="Trophy" size={20} className="text-primary" />
+        <Wrench className="w-5 h-5 text-primary" />
         Skills
       </h2>
       <div className="flex flex-wrap gap-3">

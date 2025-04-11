@@ -19,6 +19,7 @@ import datetime as dt
 import requests
 from bson import ObjectId
 from pymongo.errors import ConnectionFailure
+import shutil
 
 # Set Tesseract path
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
@@ -65,9 +66,18 @@ os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 # Flask app
 app = Flask(__name__)
-
-# Configure CORS to allow requests from your frontend
-CORS(app, resources={r"/*": {"origins": "*"}})
+CORS(app, 
+     resources={
+         r"/*": {
+             "origins": ["http://localhost:8080"],  # Update with your frontend URL
+             "methods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+             "allow_headers": ["Content-Type", "Authorization"],
+             "supports_credentials": True,
+             "expose_headers": ["Content-Type", "Authorization"],
+             "allow_credentials": True,
+             "max_age": 3600
+         }
+     })
 
 # Add your Google Client ID
 GOOGLE_CLIENT_ID = "12063884765-427du25qov1rcev5mruu2glor2ahd5k2.apps.googleusercontent.com"  # Replace with your actual Google Client ID
@@ -419,7 +429,6 @@ def parse_resumes():
 
 @app.route('/get-parsed-resume', methods=['GET'])
 def get_parsed_resume():
-    """API endpoint to fetch all parsed resume data with most recent first"""
     try:
         json_files = glob(os.path.join(OUTPUT_DIR, "*.json"))
         if not json_files:
@@ -432,6 +441,8 @@ def get_parsed_resume():
                 file_mtime = os.path.getmtime(json_file)
                 with open(json_file, 'r', encoding='utf-8') as f:
                     resume_data = json.load(f)
+                    if "_id" in resume_data:
+                        resume_data["_id"] = str(resume_data["_id"])  # Convert ObjectId to string
                     parsed_resumes.append((file_mtime, resume_data))
             except Exception as e:
                 logger.error(f"Error reading {json_file}: {str(e)}")
@@ -709,12 +720,126 @@ def get_saved_resumes():
         logger.error(f"Error getting saved resumes: {str(e)}")
         return jsonify({"error": str(e)}), 500
 
+@app.route("/api/delete-resume/<path:identifier>", methods=["DELETE", "OPTIONS"])
+def delete_resume(identifier):
+    if request.method == "OPTIONS":
+        response = jsonify({"message": "OK"})
+        response.headers.add('Access-Control-Allow-Methods', 'DELETE, OPTIONS')
+        response.headers.add('Access-Control-Allow-Headers', 'Content-Type, Authorization')
+        return response
+
+    try:
+        # Get token from header
+        auth_header = request.headers.get("Authorization")
+        if not auth_header:
+            return jsonify({"error": "Authorization header missing"}), 401
+
+        token = auth_header.split(" ")[1]
+        
+        try:
+            decoded = jwt.decode(token, JWT_SECRET, algorithms=["HS256"])
+            user_id = decoded["user_id"]
+        except jwt.InvalidTokenError:
+            return jsonify({"error": "Invalid token"}), 401
+
+        # Try to find resume by _id or source_file
+        resume = None
+        try:
+            resume = parsed_resumes_collection.find_one({"_id": ObjectId(identifier)})
+        except:
+            resume = parsed_resumes_collection.find_one({"source_file": identifier})
+
+        if not resume:
+            return jsonify({"error": "Resume not found"}), 404
+
+        # Delete the file from uploads folder if it exists
+        if "source_file" in resume:
+            # Delete from uploads folder
+            upload_file_path = os.path.join(UPLOAD_DIR, resume["source_file"])
+            if os.path.exists(upload_file_path):
+                try:
+                    os.remove(upload_file_path)
+                except Exception as e:
+                    logger.error(f"Error deleting file from uploads: {str(e)}")
+
+            # Delete from processed_data folder
+            json_files = glob(os.path.join(OUTPUT_DIR, f"*{os.path.splitext(resume['source_file'])[0]}*.json"))
+            for json_file in json_files:
+                try:
+                    os.remove(json_file)
+                    logger.info(f"Deleted processed file: {json_file}")
+                except Exception as e:
+                    logger.error(f"Error deleting processed file {json_file}: {str(e)}")
+
+        # Delete from MongoDB
+        if "_id" in resume:
+            parsed_resumes_collection.delete_one({"_id": resume["_id"]})
+        else:
+            parsed_resumes_collection.delete_one({"source_file": resume["source_file"]})
+
+        response = jsonify({"message": "Resume deleted successfully"})
+        return response, 200
+
+    except Exception as e:
+        logger.error(f"Error deleting resume: {str(e)}")
+        return jsonify({"error": str(e)}), 500
+
+@app.route("/api/delete-all-resumes", methods=["DELETE", "OPTIONS"])
+def delete_all_resumes():
+    if request.method == "OPTIONS":
+        response = jsonify({"message": "OK"})
+        response.headers.add('Access-Control-Allow-Methods', 'DELETE, OPTIONS')
+        response.headers.add('Access-Control-Allow-Headers', 'Content-Type, Authorization')
+        response.headers.add('Access-Control-Allow-Credentials', 'true')
+        return response
+
+    try:
+        # Get token from header
+        auth_header = request.headers.get("Authorization")
+        if not auth_header:
+            return jsonify({"error": "Authorization header missing"}), 401
+
+        token = auth_header.split(" ")[1]
+        
+        # Verify JWT token
+        decoded = jwt.decode(token, JWT_SECRET, algorithms=["HS256"])
+        user_id = decoded["user_id"]
+
+        # Get user's resumes
+        user_resumes = list(parsed_resumes_collection.find(
+            {"user_id": ObjectId(user_id)}
+        ))
+
+        # Delete files from uploads folder
+        for resume in user_resumes:
+            if "source_file" in resume:
+                file_path = os.path.join(UPLOAD_DIR, resume["source_file"])
+                if os.path.exists(file_path):
+                    os.remove(file_path)
+
+        # Delete from MongoDB
+        parsed_resumes_collection.delete_many({"user_id": ObjectId(user_id)})
+        
+        # Clear user's saved_resumes array
+        users_collection.update_one(
+            {"_id": ObjectId(user_id)},
+            {"$set": {"saved_resumes": []}}
+        )
+
+        response = jsonify({"message": "All resumes deleted successfully"})
+        response.headers.add('Access-Control-Allow-Credentials', 'true')
+        return response, 200
+
+    except Exception as e:
+        logger.error(f"Error deleting all resumes: {str(e)}")
+        return jsonify({"error": str(e)}), 500
+
 if __name__ == "__main__":
     logger.info("Starting Flask application")
     app.run(host='0.0.0.0', port=5000, debug=False, threaded=True)
 
 from pymongo import MongoClient
-client = MongoClient('your_mongodb_connection_string')
+client = MongoClient("mongodb+srv://Deepan:Interstellar143@resumedata.bpkwtpe.mongodb.net/?retryWrites=true&w=majority&appName=Resumedata")
 try:
     client.admin.command('ping')
     print("MongoDB connection successful")

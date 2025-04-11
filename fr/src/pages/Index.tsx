@@ -7,7 +7,7 @@ import ResumeAnalytics from '@/components/ResumeAnalytics';
 import ParticleBackground from '@/components/ParticleBackground';
 import Chatbot from '@/components/Chatbot';
 import { useNavigate, useLocation } from 'react-router-dom';
-import { parseResumes, getParsedResumes } from '@/services/api';
+import { parseResumes, getParsedResumes, ParsedResume, ParseResumesResponse } from '@/services/api';
 
 interface FileWithPreview extends File {
   preview?: string;
@@ -16,7 +16,7 @@ interface FileWithPreview extends File {
 const Index: React.FC = () => {
   const [selectedFiles, setSelectedFiles] = useState<FileWithPreview[]>([]);
   const [isProcessing, setIsProcessing] = useState(false);
-  const [parsedResume, setParsedResume] = useState<any>(null);
+  const [parsedResumes, setParsedResumes] = useState<ParsedResume[]>([]);
   const [showAnalytics, setShowAnalytics] = useState(false);
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -54,18 +54,15 @@ const Index: React.FC = () => {
       
       const fetchParsedResumeData = async () => {
         try {
-          try {
-            const data = await getParsedResumes();
-            
-            if (data.resumes && data.resumes.length > 0) {
-              setParsedResume(data.resumes[0]);
-              return;
-            }
-          } catch (error) {
-            console.log("Backend not available or no resume data, using demo data");
-          }
+          const data = await getParsedResumes();
           
-          setParsedResume({
+          if (data.resumes && data.resumes.length > 0) {
+            setParsedResumes(data.resumes);
+            return;
+          }
+        } catch (error) {
+          console.log("Backend not available or no resume data, using demo data");
+          setParsedResumes([{
             name: "Demo User",
             email: "demo@example.com",
             phone: "+1 (555) 123-4567",
@@ -109,18 +106,14 @@ const Index: React.FC = () => {
             certifications: ["AWS Certified Developer", "Google Cloud Professional"],
             languages: ["English", "Spanish", "French"],
             achievements: ["Best Developer Award 2022", "Published research paper on AI"]
-          });
-        } catch (error) {
-          console.error('Error fetching resume data:', error);
-          toast.error('Failed to load resume data. Please try again.');
-          navigate('/');
+          }]);
         }
       };
       
       fetchParsedResumeData();
     } else {
       setShowAnalytics(false);
-      setParsedResume(null);
+      setParsedResumes([]);
     }
   }, [location.search, navigate]);
   
@@ -156,20 +149,32 @@ const Index: React.FC = () => {
     
     const uploadResumes = async () => {
       try {
-        try {
-          const data = await parseResumes(selectedFiles);
-          console.log("Resume parsing response:", data);
-          
-          setTimeout(handleProcessingComplete, 1000);
-          return;
-        } catch (error) {
-          console.log("Backend not available, simulating processing");
-          setTimeout(handleProcessingComplete, 3000);
+        const data: ParseResumesResponse = await parseResumes(selectedFiles);
+        console.log("Resume parsing response:", data);
+        
+        if (data.resumes) {
+          setParsedResumes(data.resumes);
         }
+        
+        setTimeout(handleProcessingComplete, 1000);
       } catch (error) {
-        console.error('Error:', error);
-        toast.error('Failed to parse resumes. Please try again.');
-        setIsProcessing(false);
+        console.log("Backend not available, simulating processing");
+        // Use proper typing for demo data
+        setParsedResumes([{
+          name: "Demo User",
+          email: "demo@example.com",
+          phone: "+1 (555) 123-4567",
+          location: "San Francisco, CA",
+          summary: "Experienced software engineer...",
+          skills: ["React", "TypeScript", "Node.js"],
+          experience: [],
+          education: [],
+          projects: [],
+          certifications: [],
+          languages: [],
+          achievements: []
+        }]);
+        setTimeout(handleProcessingComplete, 3000);
       }
     };
     
@@ -185,7 +190,7 @@ const Index: React.FC = () => {
   const handleBackToUpload = () => {
     navigate('/');
     setShowAnalytics(false);
-    setParsedResume(null);
+    setParsedResumes([]);
   };
   
   
@@ -260,7 +265,7 @@ const Index: React.FC = () => {
                 </Button>
                 <h2 className="text-2xl font-medium bg-clip-text text-transparent bg-gradient-to-r from-primary to-purple-600">Resume Analysis</h2>
               </div>
-              <ResumeAnalytics resumeData={parsedResume} />
+              <ResumeAnalytics resumesData={parsedResumes} />
             </>
           ) : (
             <FileUploadArea 

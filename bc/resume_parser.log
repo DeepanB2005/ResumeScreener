@@ -2000,3 +2000,509 @@ NotImplementedError: Collection objects do not implement truth value testing or 
 2025-04-10 17:12:33,100 - INFO - 127.0.0.1 - - [10/Apr/2025 17:12:33] "POST /api/save-resume HTTP/1.1" 200 -
 2025-04-10 17:12:34,800 - INFO - 127.0.0.1 - - [10/Apr/2025 17:12:34] "OPTIONS /api/get-saved-resumes HTTP/1.1" 200 -
 2025-04-10 17:12:35,247 - INFO - 127.0.0.1 - - [10/Apr/2025 17:12:35] "GET /api/get-saved-resumes HTTP/1.1" 200 -
+2025-04-10 20:22:42,935 - INFO - Starting Flask application
+2025-04-10 20:22:42,953 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.84.231:5000
+2025-04-10 20:22:42,954 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-10 20:29:31,385 - INFO - 127.0.0.1 - - [10/Apr/2025 20:29:31] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 20:29:31,610 - INFO - No parsed resume data available
+2025-04-10 20:29:31,613 - INFO - 127.0.0.1 - - [10/Apr/2025 20:29:31] "[33mGET /get-parsed-resume HTTP/1.1[0m" 404 -
+2025-04-10 20:30:14,869 - INFO - 127.0.0.1 - - [10/Apr/2025 20:30:14] "OPTIONS /api/get-saved-resumes HTTP/1.1" 200 -
+2025-04-10 20:30:16,046 - INFO - 127.0.0.1 - - [10/Apr/2025 20:30:16] "GET /api/get-saved-resumes HTTP/1.1" 200 -
+2025-04-10 20:51:41,890 - INFO - 127.0.0.1 - - [10/Apr/2025 20:51:41] "OPTIONS /api/get-saved-resumes HTTP/1.1" 200 -
+2025-04-10 20:51:42,858 - INFO - 127.0.0.1 - - [10/Apr/2025 20:51:42] "GET /api/get-saved-resumes HTTP/1.1" 200 -
+2025-04-10 20:51:45,414 - INFO - 127.0.0.1 - - [10/Apr/2025 20:51:45] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 20:51:45,737 - INFO - No parsed resume data available
+2025-04-10 20:51:45,739 - INFO - 127.0.0.1 - - [10/Apr/2025 20:51:45] "[33mGET /get-parsed-resume HTTP/1.1[0m" 404 -
+2025-04-10 20:51:49,491 - INFO - No parsed resume data available
+2025-04-10 20:51:49,492 - INFO - 127.0.0.1 - - [10/Apr/2025 20:51:49] "[33mGET /get-parsed-resume HTTP/1.1[0m" 404 -
+2025-04-10 20:51:52,299 - INFO - 127.0.0.1 - - [10/Apr/2025 20:51:52] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 20:51:52,606 - INFO - No parsed resume data available
+2025-04-10 20:51:52,608 - INFO - 127.0.0.1 - - [10/Apr/2025 20:51:52] "[33mGET /get-parsed-resume HTTP/1.1[0m" 404 -
+2025-04-10 20:51:53,443 - INFO - No parsed resume data available
+2025-04-10 20:51:53,446 - INFO - 127.0.0.1 - - [10/Apr/2025 20:51:53] "[33mGET /get-parsed-resume HTTP/1.1[0m" 404 -
+2025-04-10 20:51:54,670 - INFO - No parsed resume data available
+2025-04-10 20:51:54,672 - INFO - 127.0.0.1 - - [10/Apr/2025 20:51:54] "[33mGET /get-parsed-resume HTTP/1.1[0m" 404 -
+2025-04-10 20:51:55,513 - INFO - No parsed resume data available
+2025-04-10 20:51:55,515 - INFO - 127.0.0.1 - - [10/Apr/2025 20:51:55] "[33mGET /get-parsed-resume HTTP/1.1[0m" 404 -
+2025-04-10 20:51:56,800 - INFO - No parsed resume data available
+2025-04-10 20:51:56,802 - INFO - 127.0.0.1 - - [10/Apr/2025 20:51:56] "[33mGET /get-parsed-resume HTTP/1.1[0m" 404 -
+2025-04-10 20:53:16,624 - INFO - 127.0.0.1 - - [10/Apr/2025 20:53:16] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 20:53:16,947 - INFO - No parsed resume data available
+2025-04-10 20:53:16,948 - INFO - 127.0.0.1 - - [10/Apr/2025 20:53:16] "[33mGET /get-parsed-resume HTTP/1.1[0m" 404 -
+2025-04-10 20:53:17,537 - INFO - Saved parsed data to processed_data\Sujibala_20250410_205317.json
+2025-04-10 20:53:17,538 - INFO - Successfully processed Sujibala.pdf
+2025-04-10 20:53:19,014 - INFO - Saved parsed data to processed_data\jegan_20250410_205319.json
+2025-04-10 20:53:19,014 - INFO - Successfully processed jegan.pdf
+2025-04-10 20:53:19,255 - INFO - Saved parsed data to processed_data\prabakaran_20250410_205319.json
+2025-04-10 20:53:19,256 - INFO - Successfully processed prabakaran.pdf
+2025-04-10 20:53:19,269 - INFO - 127.0.0.1 - - [10/Apr/2025 20:53:19] "POST /parse-resumes HTTP/1.1" 200 -
+2025-04-10 20:53:29,194 - INFO - 127.0.0.1 - - [10/Apr/2025 20:53:29] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 20:53:29,458 - INFO - Returning 3 parsed resumes
+2025-04-10 20:53:29,460 - INFO - 127.0.0.1 - - [10/Apr/2025 20:53:29] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 20:53:54,571 - INFO - 127.0.0.1 - - [10/Apr/2025 20:53:54] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 20:53:54,838 - INFO - Returning 3 parsed resumes
+2025-04-10 20:53:54,841 - INFO - 127.0.0.1 - - [10/Apr/2025 20:53:54] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 20:53:58,319 - INFO - Returning 3 parsed resumes
+2025-04-10 20:53:58,321 - INFO - 127.0.0.1 - - [10/Apr/2025 20:53:58] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:09:42,555 - INFO - 127.0.0.1 - - [10/Apr/2025 21:09:42] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:09:42,825 - INFO - Returning 3 parsed resumes
+2025-04-10 21:09:42,827 - INFO - 127.0.0.1 - - [10/Apr/2025 21:09:42] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:09:55,569 - INFO - 127.0.0.1 - - [10/Apr/2025 21:09:55] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:09:55,837 - INFO - Returning 3 parsed resumes
+2025-04-10 21:09:55,839 - INFO - 127.0.0.1 - - [10/Apr/2025 21:09:55] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:09:58,239 - INFO - Returning 3 parsed resumes
+2025-04-10 21:09:58,240 - INFO - 127.0.0.1 - - [10/Apr/2025 21:09:58] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:10:01,548 - INFO - 127.0.0.1 - - [10/Apr/2025 21:10:01] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:10:01,817 - INFO - Returning 3 parsed resumes
+2025-04-10 21:10:01,818 - INFO - 127.0.0.1 - - [10/Apr/2025 21:10:01] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:11:51,562 - INFO - 127.0.0.1 - - [10/Apr/2025 21:11:51] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:11:51,828 - INFO - Returning 3 parsed resumes
+2025-04-10 21:11:51,829 - INFO - 127.0.0.1 - - [10/Apr/2025 21:11:51] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:12:02,253 - INFO - 127.0.0.1 - - [10/Apr/2025 21:12:02] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:12:02,577 - INFO - Returning 3 parsed resumes
+2025-04-10 21:12:02,578 - INFO - 127.0.0.1 - - [10/Apr/2025 21:12:02] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:12:21,242 - INFO - 127.0.0.1 - - [10/Apr/2025 21:12:21] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:12:21,560 - INFO - Returning 3 parsed resumes
+2025-04-10 21:12:21,562 - INFO - 127.0.0.1 - - [10/Apr/2025 21:12:21] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:12:34,246 - INFO - 127.0.0.1 - - [10/Apr/2025 21:12:34] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:12:34,557 - INFO - Returning 3 parsed resumes
+2025-04-10 21:12:34,558 - INFO - 127.0.0.1 - - [10/Apr/2025 21:12:34] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:13:50,565 - INFO - 127.0.0.1 - - [10/Apr/2025 21:13:50] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:13:50,831 - INFO - Returning 3 parsed resumes
+2025-04-10 21:13:50,832 - INFO - 127.0.0.1 - - [10/Apr/2025 21:13:50] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:13:52,247 - INFO - Returning 3 parsed resumes
+2025-04-10 21:13:52,248 - INFO - 127.0.0.1 - - [10/Apr/2025 21:13:52] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:14:22,545 - INFO - 127.0.0.1 - - [10/Apr/2025 21:14:22] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:14:22,814 - INFO - Returning 3 parsed resumes
+2025-04-10 21:14:22,819 - INFO - 127.0.0.1 - - [10/Apr/2025 21:14:22] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:14:24,240 - INFO - Returning 3 parsed resumes
+2025-04-10 21:14:24,242 - INFO - 127.0.0.1 - - [10/Apr/2025 21:14:24] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:15:36,557 - INFO - 127.0.0.1 - - [10/Apr/2025 21:15:36] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:15:36,807 - INFO - Returning 3 parsed resumes
+2025-04-10 21:15:36,809 - INFO - 127.0.0.1 - - [10/Apr/2025 21:15:36] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:15:43,245 - INFO - 127.0.0.1 - - [10/Apr/2025 21:15:43] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:15:43,567 - INFO - Returning 3 parsed resumes
+2025-04-10 21:15:43,567 - INFO - 127.0.0.1 - - [10/Apr/2025 21:15:43] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:16:24,989 - INFO - 127.0.0.1 - - [10/Apr/2025 21:16:24] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:16:25,306 - INFO - Returning 3 parsed resumes
+2025-04-10 21:16:25,307 - INFO - 127.0.0.1 - - [10/Apr/2025 21:16:25] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:16:40,242 - INFO - 127.0.0.1 - - [10/Apr/2025 21:16:40] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:16:40,553 - INFO - Returning 3 parsed resumes
+2025-04-10 21:16:40,554 - INFO - 127.0.0.1 - - [10/Apr/2025 21:16:40] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:16:44,241 - INFO - Returning 3 parsed resumes
+2025-04-10 21:16:44,242 - INFO - 127.0.0.1 - - [10/Apr/2025 21:16:44] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:16:57,558 - INFO - 127.0.0.1 - - [10/Apr/2025 21:16:57] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:16:57,809 - INFO - Returning 3 parsed resumes
+2025-04-10 21:16:57,810 - INFO - 127.0.0.1 - - [10/Apr/2025 21:16:57] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:17:00,249 - INFO - Returning 3 parsed resumes
+2025-04-10 21:17:00,250 - INFO - 127.0.0.1 - - [10/Apr/2025 21:17:00] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:18:34,554 - INFO - 127.0.0.1 - - [10/Apr/2025 21:18:34] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:18:34,804 - INFO - Returning 3 parsed resumes
+2025-04-10 21:18:34,805 - INFO - 127.0.0.1 - - [10/Apr/2025 21:18:34] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:18:36,244 - INFO - Returning 3 parsed resumes
+2025-04-10 21:18:36,246 - INFO - 127.0.0.1 - - [10/Apr/2025 21:18:36] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:21:08,441 - INFO - 127.0.0.1 - - [10/Apr/2025 21:21:08] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:21:08,690 - INFO - Returning 3 parsed resumes
+2025-04-10 21:21:08,692 - INFO - 127.0.0.1 - - [10/Apr/2025 21:21:08] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:21:23,246 - INFO - 127.0.0.1 - - [10/Apr/2025 21:21:23] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:21:23,556 - INFO - Returning 3 parsed resumes
+2025-04-10 21:21:23,557 - INFO - 127.0.0.1 - - [10/Apr/2025 21:21:23] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:21:25,255 - INFO - Returning 3 parsed resumes
+2025-04-10 21:21:25,257 - INFO - 127.0.0.1 - - [10/Apr/2025 21:21:25] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:21:39,566 - INFO - 127.0.0.1 - - [10/Apr/2025 21:21:39] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:21:39,831 - INFO - Returning 3 parsed resumes
+2025-04-10 21:21:39,833 - INFO - 127.0.0.1 - - [10/Apr/2025 21:21:39] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:21:57,245 - INFO - 127.0.0.1 - - [10/Apr/2025 21:21:57] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:21:57,563 - INFO - Returning 3 parsed resumes
+2025-04-10 21:21:57,565 - INFO - 127.0.0.1 - - [10/Apr/2025 21:21:57] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:22:16,245 - INFO - 127.0.0.1 - - [10/Apr/2025 21:22:16] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:22:16,562 - INFO - Returning 3 parsed resumes
+2025-04-10 21:22:16,563 - INFO - 127.0.0.1 - - [10/Apr/2025 21:22:16] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:22:40,102 - INFO - 127.0.0.1 - - [10/Apr/2025 21:22:40] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:22:40,424 - INFO - Returning 3 parsed resumes
+2025-04-10 21:22:40,425 - INFO - 127.0.0.1 - - [10/Apr/2025 21:22:40] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:22:43,950 - INFO - Returning 3 parsed resumes
+2025-04-10 21:22:43,951 - INFO - 127.0.0.1 - - [10/Apr/2025 21:22:43] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:22:47,271 - INFO - 127.0.0.1 - - [10/Apr/2025 21:22:47] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:22:47,522 - INFO - Returning 3 parsed resumes
+2025-04-10 21:22:47,524 - INFO - 127.0.0.1 - - [10/Apr/2025 21:22:47] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:22:54,912 - INFO - 127.0.0.1 - - [10/Apr/2025 21:22:54] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:22:55,231 - INFO - Returning 3 parsed resumes
+2025-04-10 21:22:55,232 - INFO - 127.0.0.1 - - [10/Apr/2025 21:22:55] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:23:08,994 - INFO - 127.0.0.1 - - [10/Apr/2025 21:23:08] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:23:09,317 - INFO - Returning 3 parsed resumes
+2025-04-10 21:23:09,319 - INFO - 127.0.0.1 - - [10/Apr/2025 21:23:09] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:23:12,031 - INFO - Returning 3 parsed resumes
+2025-04-10 21:23:12,033 - INFO - 127.0.0.1 - - [10/Apr/2025 21:23:12] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:23:14,271 - INFO - Returning 3 parsed resumes
+2025-04-10 21:23:14,273 - INFO - 127.0.0.1 - - [10/Apr/2025 21:23:14] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:23:20,951 - INFO - 127.0.0.1 - - [10/Apr/2025 21:23:20] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:23:21,267 - INFO - Returning 3 parsed resumes
+2025-04-10 21:23:21,269 - INFO - 127.0.0.1 - - [10/Apr/2025 21:23:21] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:23:24,986 - INFO - Returning 3 parsed resumes
+2025-04-10 21:23:24,987 - INFO - 127.0.0.1 - - [10/Apr/2025 21:23:24] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:23:33,235 - INFO - 127.0.0.1 - - [10/Apr/2025 21:23:33] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:23:33,498 - INFO - Returning 3 parsed resumes
+2025-04-10 21:23:33,498 - INFO - 127.0.0.1 - - [10/Apr/2025 21:23:33] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:23:34,952 - INFO - Returning 3 parsed resumes
+2025-04-10 21:23:34,954 - INFO - 127.0.0.1 - - [10/Apr/2025 21:23:34] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:23:54,563 - INFO - 127.0.0.1 - - [10/Apr/2025 21:23:54] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:23:54,835 - INFO - Returning 3 parsed resumes
+2025-04-10 21:23:54,838 - INFO - 127.0.0.1 - - [10/Apr/2025 21:23:54] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:23:56,242 - INFO - Returning 3 parsed resumes
+2025-04-10 21:23:56,243 - INFO - 127.0.0.1 - - [10/Apr/2025 21:23:56] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:24:55,388 - INFO - 127.0.0.1 - - [10/Apr/2025 21:24:55] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:24:55,637 - INFO - Returning 3 parsed resumes
+2025-04-10 21:24:55,638 - INFO - 127.0.0.1 - - [10/Apr/2025 21:24:55] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:25:06,246 - INFO - 127.0.0.1 - - [10/Apr/2025 21:25:06] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:25:06,556 - INFO - Returning 3 parsed resumes
+2025-04-10 21:25:06,556 - INFO - 127.0.0.1 - - [10/Apr/2025 21:25:06] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:25:21,243 - INFO - 127.0.0.1 - - [10/Apr/2025 21:25:21] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:25:21,557 - INFO - Returning 3 parsed resumes
+2025-04-10 21:25:21,558 - INFO - 127.0.0.1 - - [10/Apr/2025 21:25:21] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:25:23,249 - INFO - Returning 3 parsed resumes
+2025-04-10 21:25:23,250 - INFO - 127.0.0.1 - - [10/Apr/2025 21:25:23] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:25:49,559 - INFO - 127.0.0.1 - - [10/Apr/2025 21:25:49] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:25:49,825 - INFO - Returning 3 parsed resumes
+2025-04-10 21:25:49,826 - INFO - 127.0.0.1 - - [10/Apr/2025 21:25:49] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:25:51,236 - INFO - Returning 3 parsed resumes
+2025-04-10 21:25:51,237 - INFO - 127.0.0.1 - - [10/Apr/2025 21:25:51] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:26:04,555 - INFO - 127.0.0.1 - - [10/Apr/2025 21:26:04] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:26:04,807 - INFO - Returning 3 parsed resumes
+2025-04-10 21:26:04,810 - INFO - 127.0.0.1 - - [10/Apr/2025 21:26:04] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:26:06,247 - INFO - Returning 3 parsed resumes
+2025-04-10 21:26:06,248 - INFO - 127.0.0.1 - - [10/Apr/2025 21:26:06] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:26:12,232 - INFO - 127.0.0.1 - - [10/Apr/2025 21:26:12] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:26:12,499 - INFO - Returning 3 parsed resumes
+2025-04-10 21:26:12,500 - INFO - 127.0.0.1 - - [10/Apr/2025 21:26:12] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:26:32,698 - INFO - 127.0.0.1 - - [10/Apr/2025 21:26:32] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:26:33,013 - INFO - Returning 3 parsed resumes
+2025-04-10 21:26:33,015 - INFO - 127.0.0.1 - - [10/Apr/2025 21:26:33] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:30:51,437 - INFO - 127.0.0.1 - - [10/Apr/2025 21:30:51] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:30:55,465 - INFO - Returning 3 parsed resumes
+2025-04-10 21:30:55,467 - INFO - 127.0.0.1 - - [10/Apr/2025 21:30:55] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:32:09,059 - INFO - 127.0.0.1 - - [10/Apr/2025 21:32:09] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:32:09,326 - INFO - Returning 3 parsed resumes
+2025-04-10 21:32:09,328 - INFO - 127.0.0.1 - - [10/Apr/2025 21:32:09] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:33:48,578 - INFO - 127.0.0.1 - - [10/Apr/2025 21:33:48] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:33:48,849 - INFO - Returning 3 parsed resumes
+2025-04-10 21:33:48,850 - INFO - 127.0.0.1 - - [10/Apr/2025 21:33:48] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:34:13,574 - INFO - 127.0.0.1 - - [10/Apr/2025 21:34:13] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:34:13,841 - INFO - Returning 3 parsed resumes
+2025-04-10 21:34:13,843 - INFO - 127.0.0.1 - - [10/Apr/2025 21:34:13] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:35:41,490 - INFO - 127.0.0.1 - - [10/Apr/2025 21:35:41] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:35:41,803 - INFO - Returning 3 parsed resumes
+2025-04-10 21:35:41,805 - INFO - 127.0.0.1 - - [10/Apr/2025 21:35:41] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:35:42,308 - INFO - Saved parsed data to processed_data\deepan__20250410_213542.json
+2025-04-10 21:35:42,308 - INFO - Successfully processed deepan_.pdf
+2025-04-10 21:35:42,788 - INFO - Saved parsed data to processed_data\jegan_20250410_213542.json
+2025-04-10 21:35:42,789 - INFO - Successfully processed jegan.pdf
+2025-04-10 21:35:42,869 - INFO - Saved parsed data to processed_data\prabakaran_20250410_213542.json
+2025-04-10 21:35:42,869 - INFO - Successfully processed prabakaran.pdf
+2025-04-10 21:35:45,645 - INFO - Saved parsed data to processed_data\Sujibala_20250410_213545.json
+2025-04-10 21:35:45,646 - INFO - Successfully processed Sujibala.pdf
+2025-04-10 21:35:46,535 - INFO - Saved parsed data to processed_data\JAYASURYA_Resume_20250410_213546.json
+2025-04-10 21:35:46,536 - INFO - Successfully processed JAYASURYA_Resume.pdf
+2025-04-10 21:35:46,538 - INFO - 127.0.0.1 - - [10/Apr/2025 21:35:46] "POST /parse-resumes HTTP/1.1" 200 -
+2025-04-10 21:35:49,347 - INFO - 127.0.0.1 - - [10/Apr/2025 21:35:49] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:35:49,605 - INFO - Returning 8 parsed resumes
+2025-04-10 21:35:49,608 - INFO - 127.0.0.1 - - [10/Apr/2025 21:35:49] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:56:42,418 - INFO - 127.0.0.1 - - [10/Apr/2025 21:56:42] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:56:42,692 - INFO - Returning 8 parsed resumes
+2025-04-10 21:56:42,695 - INFO - 127.0.0.1 - - [10/Apr/2025 21:56:42] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:58:17,573 - INFO - 127.0.0.1 - - [10/Apr/2025 21:58:17] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:58:17,840 - INFO - Returning 8 parsed resumes
+2025-04-10 21:58:17,846 - INFO - 127.0.0.1 - - [10/Apr/2025 21:58:17] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:58:19,274 - INFO - Returning 8 parsed resumes
+2025-04-10 21:58:19,278 - INFO - 127.0.0.1 - - [10/Apr/2025 21:58:19] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:58:25,558 - INFO - 127.0.0.1 - - [10/Apr/2025 21:58:25] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:58:25,826 - INFO - Returning 8 parsed resumes
+2025-04-10 21:58:25,826 - INFO - 127.0.0.1 - - [10/Apr/2025 21:58:25] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:58:30,658 - INFO - 127.0.0.1 - - [10/Apr/2025 21:58:30] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:58:30,971 - INFO - Returning 8 parsed resumes
+2025-04-10 21:58:30,974 - INFO - 127.0.0.1 - - [10/Apr/2025 21:58:30] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:58:32,266 - INFO - Returning 8 parsed resumes
+2025-04-10 21:58:32,272 - INFO - 127.0.0.1 - - [10/Apr/2025 21:58:32] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:59:02,561 - INFO - 127.0.0.1 - - [10/Apr/2025 21:59:02] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 21:59:02,830 - INFO - Returning 8 parsed resumes
+2025-04-10 21:59:02,837 - INFO - 127.0.0.1 - - [10/Apr/2025 21:59:02] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 22:09:58,176 - INFO - 127.0.0.1 - - [10/Apr/2025 22:09:58] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 22:09:58,442 - INFO - Returning 8 parsed resumes
+2025-04-10 22:09:58,445 - INFO - 127.0.0.1 - - [10/Apr/2025 22:09:58] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 22:13:58,692 - INFO - 127.0.0.1 - - [10/Apr/2025 22:13:58] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 22:13:58,941 - INFO - Returning 8 parsed resumes
+2025-04-10 22:13:58,943 - INFO - 127.0.0.1 - - [10/Apr/2025 22:13:58] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 22:14:22,375 - INFO - 127.0.0.1 - - [10/Apr/2025 22:14:22] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 22:14:22,691 - INFO - Returning 8 parsed resumes
+2025-04-10 22:14:22,693 - INFO - 127.0.0.1 - - [10/Apr/2025 22:14:22] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 22:14:24,372 - INFO - Returning 8 parsed resumes
+2025-04-10 22:14:24,374 - INFO - 127.0.0.1 - - [10/Apr/2025 22:14:24] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 22:18:58,943 - INFO - 127.0.0.1 - - [10/Apr/2025 22:18:58] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 22:18:59,216 - INFO - Returning 8 parsed resumes
+2025-04-10 22:18:59,217 - INFO - 127.0.0.1 - - [10/Apr/2025 22:18:59] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 22:29:08,769 - INFO - 127.0.0.1 - - [10/Apr/2025 22:29:08] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 22:29:09,031 - INFO - Returning 8 parsed resumes
+2025-04-10 22:29:09,034 - INFO - 127.0.0.1 - - [10/Apr/2025 22:29:09] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 23:24:20,362 - INFO - 127.0.0.1 - - [10/Apr/2025 23:24:20] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 23:24:20,639 - INFO - Returning 8 parsed resumes
+2025-04-10 23:24:20,649 - INFO - 127.0.0.1 - - [10/Apr/2025 23:24:20] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 23:24:31,490 - INFO - 127.0.0.1 - - [10/Apr/2025 23:24:31] "OPTIONS /api/get-saved-resumes HTTP/1.1" 200 -
+2025-04-10 23:24:32,550 - INFO - 127.0.0.1 - - [10/Apr/2025 23:24:32] "GET /api/get-saved-resumes HTTP/1.1" 200 -
+2025-04-10 23:24:43,036 - INFO - 127.0.0.1 - - [10/Apr/2025 23:24:43] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 23:24:43,360 - INFO - Returning 8 parsed resumes
+2025-04-10 23:24:43,367 - INFO - 127.0.0.1 - - [10/Apr/2025 23:24:43] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 23:24:48,791 - INFO - 127.0.0.1 - - [10/Apr/2025 23:24:48] "OPTIONS /api/save-resume HTTP/1.1" 200 -
+2025-04-10 23:24:49,375 - INFO - 127.0.0.1 - - [10/Apr/2025 23:24:49] "POST /api/save-resume HTTP/1.1" 200 -
+2025-04-10 23:25:05,531 - INFO - 127.0.0.1 - - [10/Apr/2025 23:25:05] "OPTIONS /api/get-saved-resumes HTTP/1.1" 200 -
+2025-04-10 23:25:06,297 - INFO - 127.0.0.1 - - [10/Apr/2025 23:25:06] "GET /api/get-saved-resumes HTTP/1.1" 200 -
+2025-04-10 23:27:19,776 - INFO - 127.0.0.1 - - [10/Apr/2025 23:27:19] "OPTIONS /api/get-saved-resumes HTTP/1.1" 200 -
+2025-04-10 23:27:21,358 - INFO - 127.0.0.1 - - [10/Apr/2025 23:27:21] "GET /api/get-saved-resumes HTTP/1.1" 200 -
+2025-04-10 23:27:52,198 - INFO - 127.0.0.1 - - [10/Apr/2025 23:27:52] "OPTIONS /api/get-saved-resumes HTTP/1.1" 200 -
+2025-04-10 23:27:52,816 - INFO - 127.0.0.1 - - [10/Apr/2025 23:27:52] "GET /api/get-saved-resumes HTTP/1.1" 200 -
+2025-04-10 23:28:07,575 - INFO - 127.0.0.1 - - [10/Apr/2025 23:28:07] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 23:28:07,903 - INFO - Returning 8 parsed resumes
+2025-04-10 23:28:07,907 - INFO - 127.0.0.1 - - [10/Apr/2025 23:28:07] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 23:47:47,792 - INFO - 127.0.0.1 - - [10/Apr/2025 23:47:47] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 23:47:48,038 - INFO - Returning 8 parsed resumes
+2025-04-10 23:47:48,047 - INFO - 127.0.0.1 - - [10/Apr/2025 23:47:48] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 23:47:48,487 - INFO - Returning 8 parsed resumes
+2025-04-10 23:47:48,491 - INFO - 127.0.0.1 - - [10/Apr/2025 23:47:48] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 23:51:43,185 - INFO - 127.0.0.1 - - [10/Apr/2025 23:51:43] "OPTIONS /api/get-saved-resumes HTTP/1.1" 200 -
+2025-04-10 23:51:44,375 - INFO - 127.0.0.1 - - [10/Apr/2025 23:51:44] "GET /api/get-saved-resumes HTTP/1.1" 200 -
+2025-04-10 23:52:07,365 - INFO - 127.0.0.1 - - [10/Apr/2025 23:52:07] "OPTIONS /api/get-saved-resumes HTTP/1.1" 200 -
+2025-04-10 23:52:07,904 - INFO - 127.0.0.1 - - [10/Apr/2025 23:52:07] "GET /api/get-saved-resumes HTTP/1.1" 200 -
+2025-04-10 23:52:22,508 - INFO - 127.0.0.1 - - [10/Apr/2025 23:52:22] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 23:52:22,831 - INFO - Returning 8 parsed resumes
+2025-04-10 23:52:22,835 - INFO - 127.0.0.1 - - [10/Apr/2025 23:52:22] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 23:52:51,183 - INFO - 127.0.0.1 - - [10/Apr/2025 23:52:51] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 23:52:51,506 - INFO - Returning 8 parsed resumes
+2025-04-10 23:52:51,515 - INFO - 127.0.0.1 - - [10/Apr/2025 23:52:51] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 23:53:48,489 - INFO - 127.0.0.1 - - [10/Apr/2025 23:53:48] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 23:53:48,741 - INFO - Returning 8 parsed resumes
+2025-04-10 23:53:48,744 - INFO - 127.0.0.1 - - [10/Apr/2025 23:53:48] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 23:56:26,765 - INFO - 127.0.0.1 - - [10/Apr/2025 23:56:26] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 23:56:27,036 - INFO - Returning 8 parsed resumes
+2025-04-10 23:56:27,039 - INFO - 127.0.0.1 - - [10/Apr/2025 23:56:27] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 23:56:27,459 - INFO - Returning 8 parsed resumes
+2025-04-10 23:56:27,461 - INFO - 127.0.0.1 - - [10/Apr/2025 23:56:27] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 23:56:46,951 - INFO - 127.0.0.1 - - [10/Apr/2025 23:56:46] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 23:56:47,224 - INFO - Returning 8 parsed resumes
+2025-04-10 23:56:47,227 - INFO - 127.0.0.1 - - [10/Apr/2025 23:56:47] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 23:57:35,372 - INFO - 127.0.0.1 - - [10/Apr/2025 23:57:35] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-10 23:57:35,634 - INFO - Returning 8 parsed resumes
+2025-04-10 23:57:35,637 - INFO - 127.0.0.1 - - [10/Apr/2025 23:57:35] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 00:00:55,751 - INFO - 127.0.0.1 - - [11/Apr/2025 00:00:55] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 00:00:56,018 - INFO - Returning 8 parsed resumes
+2025-04-11 00:00:56,022 - INFO - 127.0.0.1 - - [11/Apr/2025 00:00:56] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 00:00:59,476 - INFO - Returning 8 parsed resumes
+2025-04-11 00:00:59,481 - INFO - 127.0.0.1 - - [11/Apr/2025 00:00:59] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 00:02:38,278 - INFO - 127.0.0.1 - - [11/Apr/2025 00:02:38] "[33mOPTIONS /api/delete-all-resumes HTTP/1.1[0m" 404 -
+2025-04-11 00:03:41,776 - INFO - 127.0.0.1 - - [11/Apr/2025 00:03:41] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 00:03:42,044 - INFO - Returning 8 parsed resumes
+2025-04-11 00:03:42,046 - INFO - 127.0.0.1 - - [11/Apr/2025 00:03:42] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 00:04:02,962 - INFO - 127.0.0.1 - - [11/Apr/2025 00:04:02] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 00:04:03,234 - INFO - Returning 8 parsed resumes
+2025-04-11 00:04:03,236 - INFO - 127.0.0.1 - - [11/Apr/2025 00:04:03] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 00:04:06,651 - INFO - 127.0.0.1 - - [11/Apr/2025 00:04:06] "[33mOPTIONS /api/delete-all-resumes HTTP/1.1[0m" 404 -
+2025-04-11 00:04:10,575 - INFO - 127.0.0.1 - - [11/Apr/2025 00:04:10] "[33mOPTIONS /api/delete-resume/undefined HTTP/1.1[0m" 404 -
+2025-04-11 00:05:40,780 - INFO - 127.0.0.1 - - [11/Apr/2025 00:05:40] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 00:05:41,047 - INFO - Returning 8 parsed resumes
+2025-04-11 00:05:41,049 - INFO - 127.0.0.1 - - [11/Apr/2025 00:05:41] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 00:05:54,765 - INFO - 127.0.0.1 - - [11/Apr/2025 00:05:54] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 00:05:55,036 - INFO - Returning 8 parsed resumes
+2025-04-11 00:05:55,039 - INFO - 127.0.0.1 - - [11/Apr/2025 00:05:55] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 00:05:55,476 - INFO - Returning 8 parsed resumes
+2025-04-11 00:05:55,477 - INFO - 127.0.0.1 - - [11/Apr/2025 00:05:55] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 00:06:49,629 - INFO - 127.0.0.1 - - [11/Apr/2025 00:06:49] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 00:06:49,897 - INFO - Returning 8 parsed resumes
+2025-04-11 00:06:49,903 - INFO - 127.0.0.1 - - [11/Apr/2025 00:06:49] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 00:06:53,672 - INFO - 127.0.0.1 - - [11/Apr/2025 00:06:53] "[33mOPTIONS /api/delete-resume/undefined HTTP/1.1[0m" 404 -
+2025-04-11 00:10:18,768 - INFO - 127.0.0.1 - - [11/Apr/2025 00:10:18] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 00:10:19,035 - INFO - Returning 8 parsed resumes
+2025-04-11 00:10:19,036 - INFO - 127.0.0.1 - - [11/Apr/2025 00:10:19] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 00:10:20,763 - INFO - Returning 8 parsed resumes
+2025-04-11 00:10:20,764 - INFO - 127.0.0.1 - - [11/Apr/2025 00:10:20] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 00:11:35,290 - INFO - 127.0.0.1 - - [11/Apr/2025 00:11:35] "[33mOPTIONS /api/delete-all-resumes HTTP/1.1[0m" 404 -
+2025-04-11 00:11:54,257 - INFO - 127.0.0.1 - - [11/Apr/2025 00:11:54] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 00:11:54,511 - INFO - Returning 8 parsed resumes
+2025-04-11 00:11:54,516 - INFO - 127.0.0.1 - - [11/Apr/2025 00:11:54] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 00:13:44,838 - INFO - 127.0.0.1 - - [11/Apr/2025 00:13:44] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 00:13:45,094 - INFO - Returning 8 parsed resumes
+2025-04-11 00:13:45,097 - INFO - 127.0.0.1 - - [11/Apr/2025 00:13:45] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 00:13:46,451 - INFO - Returning 8 parsed resumes
+2025-04-11 00:13:46,453 - INFO - 127.0.0.1 - - [11/Apr/2025 00:13:46] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 00:14:29,025 - INFO - 127.0.0.1 - - [11/Apr/2025 00:14:29] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 00:14:29,296 - INFO - Returning 8 parsed resumes
+2025-04-11 00:14:29,299 - INFO - 127.0.0.1 - - [11/Apr/2025 00:14:29] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 00:14:33,040 - INFO - 127.0.0.1 - - [11/Apr/2025 00:14:33] "[33mOPTIONS /api/delete-all-resumes HTTP/1.1[0m" 404 -
+2025-04-11 00:16:26,777 - INFO - 127.0.0.1 - - [11/Apr/2025 00:16:26] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 00:16:27,046 - INFO - Returning 8 parsed resumes
+2025-04-11 00:16:27,047 - INFO - 127.0.0.1 - - [11/Apr/2025 00:16:27] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 00:16:44,781 - INFO - 127.0.0.1 - - [11/Apr/2025 00:16:44] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 00:16:45,049 - INFO - Returning 8 parsed resumes
+2025-04-11 00:16:45,051 - INFO - 127.0.0.1 - - [11/Apr/2025 00:16:45] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 00:17:23,047 - INFO - 127.0.0.1 - - [11/Apr/2025 00:17:23] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 00:17:23,298 - INFO - Returning 8 parsed resumes
+2025-04-11 00:17:23,300 - INFO - 127.0.0.1 - - [11/Apr/2025 00:17:23] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 00:17:27,411 - INFO - 127.0.0.1 - - [11/Apr/2025 00:17:27] "[33mOPTIONS /api/delete-all-resumes HTTP/1.1[0m" 404 -
+2025-04-11 09:11:28,999 - WARNING - Unknown option passed to Flask-CORS: allow_credentials
+2025-04-11 09:11:29,002 - INFO - Starting Flask application
+2025-04-11 09:11:29,015 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.137.175:5000
+2025-04-11 09:11:29,015 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-11 09:12:21,654 - INFO - 127.0.0.1 - - [11/Apr/2025 09:12:21] "OPTIONS /api/get-saved-resumes HTTP/1.1" 200 -
+2025-04-11 09:12:22,838 - INFO - 127.0.0.1 - - [11/Apr/2025 09:12:22] "GET /api/get-saved-resumes HTTP/1.1" 200 -
+2025-04-11 09:13:48,007 - INFO - 127.0.0.1 - - [11/Apr/2025 09:13:48] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 09:13:48,275 - INFO - Returning 8 parsed resumes
+2025-04-11 09:13:48,276 - INFO - 127.0.0.1 - - [11/Apr/2025 09:13:48] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 09:23:00,115 - INFO - 127.0.0.1 - - [11/Apr/2025 09:23:00] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 09:23:00,382 - INFO - Returning 8 parsed resumes
+2025-04-11 09:23:00,383 - INFO - 127.0.0.1 - - [11/Apr/2025 09:23:00] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 09:23:52,136 - INFO - 127.0.0.1 - - [11/Apr/2025 09:23:52] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 09:23:52,400 - INFO - Returning 8 parsed resumes
+2025-04-11 09:23:52,403 - INFO - 127.0.0.1 - - [11/Apr/2025 09:23:52] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 09:34:33,130 - WARNING - Unknown option passed to Flask-CORS: allow_credentials
+2025-04-11 09:34:33,132 - INFO - Starting Flask application
+2025-04-11 09:34:33,146 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.239.231:5000
+2025-04-11 09:34:33,146 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-11 09:35:37,788 - INFO - 127.0.0.1 - - [11/Apr/2025 09:35:37] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 09:35:38,053 - INFO - Returning 8 parsed resumes
+2025-04-11 09:35:38,055 - INFO - 127.0.0.1 - - [11/Apr/2025 09:35:38] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 09:35:43,107 - INFO - 127.0.0.1 - - [11/Apr/2025 09:35:43] "OPTIONS /api/delete-resume/Sujibala.pdf HTTP/1.1" 200 -
+2025-04-11 09:35:54,615 - INFO - 127.0.0.1 - - [11/Apr/2025 09:35:54] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 09:35:54,876 - INFO - Returning 8 parsed resumes
+2025-04-11 09:35:54,880 - INFO - 127.0.0.1 - - [11/Apr/2025 09:35:54] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 09:36:44,250 - INFO - 127.0.0.1 - - [11/Apr/2025 09:36:44] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 09:36:44,514 - INFO - Returning 8 parsed resumes
+2025-04-11 09:36:44,515 - INFO - 127.0.0.1 - - [11/Apr/2025 09:36:44] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 09:36:55,304 - INFO - 127.0.0.1 - - [11/Apr/2025 09:36:55] "OPTIONS /api/delete-resume/JAYASURYA_Resume.pdf HTTP/1.1" 200 -
+2025-04-11 09:39:40,129 - INFO - 127.0.0.1 - - [11/Apr/2025 09:39:40] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 09:39:40,399 - INFO - Returning 8 parsed resumes
+2025-04-11 09:39:40,400 - INFO - 127.0.0.1 - - [11/Apr/2025 09:39:40] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 09:39:42,113 - INFO - Returning 8 parsed resumes
+2025-04-11 09:39:42,114 - INFO - 127.0.0.1 - - [11/Apr/2025 09:39:42] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 09:39:48,420 - INFO - 127.0.0.1 - - [11/Apr/2025 09:39:48] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 09:39:48,668 - INFO - Returning 8 parsed resumes
+2025-04-11 09:39:48,670 - INFO - 127.0.0.1 - - [11/Apr/2025 09:39:48] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 09:39:53,385 - INFO - 127.0.0.1 - - [11/Apr/2025 09:39:53] "OPTIONS /api/delete-resume/prabakaran.pdf HTTP/1.1" 200 -
+2025-04-11 09:42:35,118 - INFO - 127.0.0.1 - - [11/Apr/2025 09:42:35] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 09:42:35,388 - INFO - Returning 8 parsed resumes
+2025-04-11 09:42:35,389 - INFO - 127.0.0.1 - - [11/Apr/2025 09:42:35] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 09:43:20,354 - INFO - 127.0.0.1 - - [11/Apr/2025 09:43:20] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 09:43:20,620 - INFO - Returning 8 parsed resumes
+2025-04-11 09:43:20,623 - INFO - 127.0.0.1 - - [11/Apr/2025 09:43:20] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 09:43:24,561 - INFO - 127.0.0.1 - - [11/Apr/2025 09:43:24] "OPTIONS /api/delete-resume/prabakaran.pdf HTTP/1.1" 200 -
+2025-04-11 09:45:21,138 - INFO - 127.0.0.1 - - [11/Apr/2025 09:45:21] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 09:45:21,403 - INFO - Returning 8 parsed resumes
+2025-04-11 09:45:21,404 - INFO - 127.0.0.1 - - [11/Apr/2025 09:45:21] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 09:45:30,149 - INFO - 127.0.0.1 - - [11/Apr/2025 09:45:30] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 09:45:30,414 - INFO - Returning 8 parsed resumes
+2025-04-11 09:45:30,414 - INFO - 127.0.0.1 - - [11/Apr/2025 09:45:30] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 09:45:41,157 - INFO - 127.0.0.1 - - [11/Apr/2025 09:45:41] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 09:45:41,420 - INFO - Returning 8 parsed resumes
+2025-04-11 09:45:41,421 - INFO - 127.0.0.1 - - [11/Apr/2025 09:45:41] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 09:45:45,533 - INFO - 127.0.0.1 - - [11/Apr/2025 09:45:45] "OPTIONS /api/delete-all-resumes HTTP/1.1" 200 -
+2025-04-11 10:16:30,432 - INFO - 127.0.0.1 - - [11/Apr/2025 10:16:30] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 10:16:30,661 - INFO - No parsed resume data available
+2025-04-11 10:16:30,664 - INFO - 127.0.0.1 - - [11/Apr/2025 10:16:30] "[33mGET /get-parsed-resume HTTP/1.1[0m" 404 -
+2025-04-11 10:16:46,683 - INFO - Saved parsed data to processed_data\jegan_20250411_101646.json
+2025-04-11 10:16:46,684 - INFO - Successfully processed jegan.pdf
+2025-04-11 10:16:46,688 - INFO - 127.0.0.1 - - [11/Apr/2025 10:16:46] "POST /parse-resumes HTTP/1.1" 200 -
+2025-04-11 10:16:48,030 - INFO - 127.0.0.1 - - [11/Apr/2025 10:16:48] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 10:16:48,280 - INFO - Returning 1 parsed resumes
+2025-04-11 10:16:48,281 - INFO - 127.0.0.1 - - [11/Apr/2025 10:16:48] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 10:17:23,394 - INFO - Saved parsed data to processed_data\Sujibala_20250411_101723.json
+2025-04-11 10:17:23,395 - INFO - Successfully processed Sujibala.pdf
+2025-04-11 10:17:23,970 - INFO - Saved parsed data to processed_data\prabakaran_20250411_101723.json
+2025-04-11 10:17:23,970 - INFO - Successfully processed prabakaran.pdf
+2025-04-11 10:17:23,971 - INFO - 127.0.0.1 - - [11/Apr/2025 10:17:23] "POST /parse-resumes HTTP/1.1" 200 -
+2025-04-11 10:17:24,984 - INFO - 127.0.0.1 - - [11/Apr/2025 10:17:24] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 10:17:25,299 - INFO - Returning 3 parsed resumes
+2025-04-11 10:17:25,300 - INFO - 127.0.0.1 - - [11/Apr/2025 10:17:25] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 10:17:54,215 - INFO - 127.0.0.1 - - [11/Apr/2025 10:17:54] "OPTIONS /chatbot HTTP/1.1" 200 -
+2025-04-11 10:17:56,390 - INFO - 127.0.0.1 - - [11/Apr/2025 10:17:56] "POST /chatbot HTTP/1.1" 200 -
+2025-04-11 10:18:06,645 - INFO - 127.0.0.1 - - [11/Apr/2025 10:18:06] "OPTIONS /chatbot HTTP/1.1" 200 -
+2025-04-11 10:18:07,731 - INFO - 127.0.0.1 - - [11/Apr/2025 10:18:07] "POST /chatbot HTTP/1.1" 200 -
+2025-04-11 10:18:16,804 - INFO - 127.0.0.1 - - [11/Apr/2025 10:18:16] "OPTIONS /chatbot HTTP/1.1" 200 -
+2025-04-11 10:18:18,916 - INFO - 127.0.0.1 - - [11/Apr/2025 10:18:18] "POST /chatbot HTTP/1.1" 200 -
+2025-04-11 10:21:50,792 - INFO - 127.0.0.1 - - [11/Apr/2025 10:21:50] "OPTIONS /chatbot HTTP/1.1" 200 -
+2025-04-11 10:21:52,169 - INFO - 127.0.0.1 - - [11/Apr/2025 10:21:52] "POST /chatbot HTTP/1.1" 200 -
+2025-04-11 10:35:28,145 - INFO - 127.0.0.1 - - [11/Apr/2025 10:35:28] "OPTIONS /api/get-saved-resumes HTTP/1.1" 200 -
+2025-04-11 10:35:29,218 - INFO - 127.0.0.1 - - [11/Apr/2025 10:35:29] "GET /api/get-saved-resumes HTTP/1.1" 200 -
+2025-04-11 10:36:13,002 - INFO - 127.0.0.1 - - [11/Apr/2025 10:36:13] "OPTIONS /api/verify-token HTTP/1.1" 200 -
+2025-04-11 10:36:14,092 - INFO - 127.0.0.1 - - [11/Apr/2025 10:36:14] "POST /api/verify-token HTTP/1.1" 200 -
+2025-04-11 10:36:14,099 - INFO - 127.0.0.1 - - [11/Apr/2025 10:36:14] "OPTIONS /api/get-saved-resumes HTTP/1.1" 200 -
+2025-04-11 10:36:14,739 - INFO - 127.0.0.1 - - [11/Apr/2025 10:36:14] "GET /api/get-saved-resumes HTTP/1.1" 200 -
+2025-04-11 10:38:20,184 - INFO - 127.0.0.1 - - [11/Apr/2025 10:38:20] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 10:38:20,450 - INFO - Returning 3 parsed resumes
+2025-04-11 10:38:20,451 - INFO - 127.0.0.1 - - [11/Apr/2025 10:38:20] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 10:38:30,369 - INFO - Successfully generated 5 job recommendations
+2025-04-11 10:38:30,369 - INFO - 127.0.0.1 - - [11/Apr/2025 10:38:30] "GET /job-matches HTTP/1.1" 200 -
+2025-04-11 10:38:40,502 - INFO - 127.0.0.1 - - [11/Apr/2025 10:38:40] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 10:38:40,751 - INFO - Returning 3 parsed resumes
+2025-04-11 10:38:40,752 - INFO - 127.0.0.1 - - [11/Apr/2025 10:38:40] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 10:38:58,842 - INFO - 127.0.0.1 - - [11/Apr/2025 10:38:58] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 10:38:59,103 - INFO - Returning 3 parsed resumes
+2025-04-11 10:38:59,103 - INFO - 127.0.0.1 - - [11/Apr/2025 10:38:59] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 10:40:03,994 - INFO - Successfully generated 5 job recommendations
+2025-04-11 10:40:03,996 - INFO - 127.0.0.1 - - [11/Apr/2025 10:40:03] "GET /job-matches HTTP/1.1" 200 -
+2025-04-11 10:40:14,273 - INFO - 127.0.0.1 - - [11/Apr/2025 10:40:14] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 10:40:14,524 - INFO - Returning 3 parsed resumes
+2025-04-11 10:40:14,525 - INFO - 127.0.0.1 - - [11/Apr/2025 10:40:14] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 10:43:14,173 - INFO - 127.0.0.1 - - [11/Apr/2025 10:43:14] "OPTIONS /api/delete-all-resumes HTTP/1.1" 200 -
+2025-04-11 10:43:21,847 - INFO - 127.0.0.1 - - [11/Apr/2025 10:43:21] "OPTIONS /api/delete-resume/jegan.pdf HTTP/1.1" 200 -
+2025-04-11 10:44:32,898 - INFO - 127.0.0.1 - - [11/Apr/2025 10:44:32] "OPTIONS /api/get-saved-resumes HTTP/1.1" 200 -
+2025-04-11 10:44:33,286 - INFO - 127.0.0.1 - - [11/Apr/2025 10:44:33] "GET /api/get-saved-resumes HTTP/1.1" 200 -
+2025-04-11 10:44:36,476 - INFO - 127.0.0.1 - - [11/Apr/2025 10:44:36] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 10:44:36,791 - INFO - Returning 3 parsed resumes
+2025-04-11 10:44:36,792 - INFO - 127.0.0.1 - - [11/Apr/2025 10:44:36] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 10:45:58,291 - INFO - Saved parsed data to processed_data\prabakaran_20250411_104558.json
+2025-04-11 10:45:58,291 - INFO - Successfully processed prabakaran.pdf
+2025-04-11 10:45:58,292 - INFO - 127.0.0.1 - - [11/Apr/2025 10:45:58] "POST /parse-resumes HTTP/1.1" 200 -
+2025-04-11 10:45:59,643 - INFO - 127.0.0.1 - - [11/Apr/2025 10:45:59] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 10:45:59,901 - INFO - Returning 4 parsed resumes
+2025-04-11 10:45:59,903 - INFO - 127.0.0.1 - - [11/Apr/2025 10:45:59] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 10:58:12,186 - INFO - 127.0.0.1 - - [11/Apr/2025 10:58:12] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 10:58:12,434 - INFO - Returning 4 parsed resumes
+2025-04-11 10:58:12,435 - INFO - 127.0.0.1 - - [11/Apr/2025 10:58:12] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 10:58:30,169 - INFO - 127.0.0.1 - - [11/Apr/2025 10:58:30] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 10:58:30,434 - INFO - Returning 4 parsed resumes
+2025-04-11 10:58:30,436 - INFO - 127.0.0.1 - - [11/Apr/2025 10:58:30] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 11:19:11,659 - INFO - 127.0.0.1 - - [11/Apr/2025 11:19:11] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 11:19:11,936 - INFO - Returning 4 parsed resumes
+2025-04-11 11:19:11,938 - INFO - 127.0.0.1 - - [11/Apr/2025 11:19:11] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 11:20:20,603 - WARNING - Unknown option passed to Flask-CORS: allow_credentials
+2025-04-11 11:20:20,606 - INFO - Starting Flask application
+2025-04-11 11:20:20,620 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.239.231:5000
+2025-04-11 11:20:20,620 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-11 11:20:30,845 - INFO - 127.0.0.1 - - [11/Apr/2025 11:20:30] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 11:20:31,108 - INFO - Returning 4 parsed resumes
+2025-04-11 11:20:31,108 - INFO - 127.0.0.1 - - [11/Apr/2025 11:20:31] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 11:20:50,463 - INFO - Saved parsed data to processed_data\JAYASURYA_Resume_20250411_112050.json
+2025-04-11 11:20:50,464 - INFO - Successfully processed JAYASURYA_Resume.pdf
+2025-04-11 11:20:50,464 - INFO - 127.0.0.1 - - [11/Apr/2025 11:20:50] "POST /parse-resumes HTTP/1.1" 200 -
+2025-04-11 11:20:51,806 - INFO - Returning 5 parsed resumes
+2025-04-11 11:20:51,807 - INFO - 127.0.0.1 - - [11/Apr/2025 11:20:51] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 11:20:57,449 - INFO - 127.0.0.1 - - [11/Apr/2025 11:20:57] "OPTIONS /api/save-resume HTTP/1.1" 200 -
+2025-04-11 11:20:58,514 - INFO - 127.0.0.1 - - [11/Apr/2025 11:20:58] "POST /api/save-resume HTTP/1.1" 200 -
+2025-04-11 11:21:01,782 - INFO - 127.0.0.1 - - [11/Apr/2025 11:21:01] "OPTIONS /api/get-saved-resumes HTTP/1.1" 200 -
+2025-04-11 11:21:02,249 - INFO - 127.0.0.1 - - [11/Apr/2025 11:21:02] "GET /api/get-saved-resumes HTTP/1.1" 200 -
+2025-04-11 11:21:09,890 - INFO - Returning 5 parsed resumes
+2025-04-11 11:21:09,892 - INFO - 127.0.0.1 - - [11/Apr/2025 11:21:09] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 11:21:20,484 - INFO - Successfully generated 5 job recommendations
+2025-04-11 11:21:20,486 - INFO - 127.0.0.1 - - [11/Apr/2025 11:21:20] "GET /job-matches HTTP/1.1" 200 -
+2025-04-11 11:21:26,225 - INFO - Returning 5 parsed resumes
+2025-04-11 11:21:26,226 - INFO - 127.0.0.1 - - [11/Apr/2025 11:21:26] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 11:21:34,779 - INFO - 127.0.0.1 - - [11/Apr/2025 11:21:34] "OPTIONS /chatbot HTTP/1.1" 200 -
+2025-04-11 11:21:36,655 - INFO - 127.0.0.1 - - [11/Apr/2025 11:21:36] "POST /chatbot HTTP/1.1" 200 -

@@ -12,17 +12,23 @@
         "Machine Learning",
         "OOP",
         "Prompt Engineering",
-        "Java",
-        "SQL",
-        "JDBC"
+        "JDBC",
+        "SQL"
     ],
-    "experience": [],
+    "experience": [
+        {
+            "title": "In plant Training",
+            "company": "Unique Technologies",
+            "date": null,
+            "description": "Completed In plant training on learning java and python at Unique Technologies"
+        }
+    ],
     "education": [
         {
             "degree": "B.Tech AI & DS",
             "institution": "Kongu Engineering College",
             "date": "July 2024",
-            "gpa": "8.65*"
+            "gpa": "8.65"
         },
         {
             "degree": "Grade 12",
@@ -69,7 +75,7 @@
     },
     "achievements": [
         "Winner, 1st Place in Paper presentation conducted by the AI Association at the Newels Competition, Kongu Engineering College,Sept 2024",
-        "Finalist, Ideathon 2024, IEF, Kongu Engineering college, Oct 2024",
+        "Finalist, Ideathon 2024, IEF, Kongu Engineering college, Oct 2024.",
         "Finalist, HCS , AI Coding Club (AICC) , Kongu Engineering College, Oct 2024"
     ],
     "leadership": [

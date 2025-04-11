@@ -13,13 +13,20 @@
         "C and C++(Basics)",
         "HTML/CSS"
     ],
-    "experience": [],
+    "experience": [
+        {
+            "title": "Inplant Training on Robotics",
+            "company": "Odugaatech Pvt.Ltd.",
+            "date": "Jul 2024",
+            "description": ""
+        }
+    ],
     "education": [
         {
             "degree": "B-Tech Artificial Intelligence and Data Science",
             "institution": "Kongu Engineering College, Perundurai, Erode, Tamil Nadu",
             "date": "2023-2027",
-            "gpa": "9.26*"
+            "gpa": "9.26"
         },
         {
             "degree": "HSC",
@@ -47,7 +54,7 @@
         }
     ],
     "certifications": [
-        "Completed -Type Writting Junior(with Distinction)"
+        "Type Writting Junior(with Distinction)"
     ],
     "languages": [
         "English",

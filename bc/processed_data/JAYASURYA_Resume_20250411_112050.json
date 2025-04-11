@@ -1,0 +1,152 @@
+{
+    "name": "Jayasurya M",
+    "email": "jayasuryakarthi55@gmail.com",
+    "phone": "+919361650175",
+    "location": null,
+    "summary": "I'm a enthusiastic Fresher as an AI developer with a strong core of Python ,C ,Java and various technologies including Machine Learning, OOP\u2019s, HTML, basics of Prompt Engineering. I am passionate about delivering innovative solutions and Continuously seeking growth opportunities through which I bring a strong commitment to excellence.",
+    "skills": [
+        "Java",
+        "Python",
+        "C",
+        "JavaScript",
+        "SQL",
+        "Keras",
+        "TensorFlow",
+        "Express",
+        "MongoDB",
+        "Terraform",
+        "Docker",
+        "Kubernetes",
+        "CircleCI",
+        "AWS",
+        "GCP",
+        "Netlify",
+        "Machine Learning",
+        "OOP\u2019s",
+        "HTML",
+        "Prompt Engineering"
+    ],
+    "experience": [
+        {
+            "title": "DevOps Engineer Intern",
+            "company": "CENTILLION LABS",
+            "date": "Nov2023\u2013Feb2024",
+            "description": "Engineered AWS Infrastructure as Code using Terraform, integrated with CircleCI, optimizing resource deployment and reducing time-to-market. Created and deployed GCP Kubernetes (Autopilot) clusters via Terraform, ensuring efficient and scalable application deployments."
+        },
+        {
+            "title": "Product Developer Intern",
+            "company": "ARISTOTLE INTELLIGENCE",
+            "date": "Jan2024\u2013Mar2024",
+            "description": "Developed and deployed an AI application, leveraging AWS for scalable and efficient cloud hosting. Enhanced application functionality by integrating APIs and optimizing system performance."
+        },
+        {
+            "title": "Platform Engineer Intern",
+            "company": "CHAINAIM CORP TECHNOLOGIES",
+            "date": "Aug2024 \u2013Nov2024",
+            "description": "Developed and deployed a technical documentation site using Docusaurus, improving user guidance and resources. Managed deployment of ACTUS Hackathon Challenge infrastructure to enhance platform scalability."
+        },
+        {
+            "title": "Product Developer Intern",
+            "company": "SYSTIMANX",
+            "date": "Mar2024\u2013Dec2024",
+            "description": "Developed a chatbot to identify former employees who joined as freshers. Integrated the chatbot within internal company databases, ensuring seamless and efficient data retrieval for user queries."
+        }
+    ],
+    "education": [
+        {
+            "degree": "B.TECH IN AI & ML",
+            "institution": "KONGU ENGINEERING COLLEGE",
+            "date": "Grad. May 2026",
+            "gpa": "8.5 /10"
+        },
+        {
+            "degree": "HSE & SSLC",
+            "institution": "THAMARAI MATRICULATION HIGHER SECONDARY SCHOOL",
+            "date": "12th Grad. May 2022",
+            "gpa": "91.8%"
+        },
+        {
+            "degree": null,
+            "institution": null,
+            "date": "10th Grad. May 2019",
+            "gpa": "91.0%"
+        }
+    ],
+    "projects": [
+        {
+            "name": "KUBERNETES DEPLOYMENT",
+            "description": "Deployed a MERN stack application on a Minikube cluster, managing both backend and frontend services. Integrated MongoDB for efficient data storage and retrieval, ensuring scalability and secure configuration management.",
+            "technologies": [
+                "Minikube",
+                "K8s",
+                "Docker",
+                "Github",
+                "MongoDB",
+                "MERN"
+            ]
+        },
+        {
+            "name": "CROP RECOMMENDATION SYSTEM",
+            "description": "Developed a crop recommendation system using machine learning and real-time APIs to provide farmers with data-driven crop suggestions. Implemented algorithms for real-time processing, enhancing agricultural decision -making.",
+            "technologies": [
+                "Machine Learning",
+                "API"
+            ]
+        },
+        {
+            "name": "PRODUCT PERSONALIZATION",
+            "description": "Developed an AI-powered personalized product system for the Farm2Bag platform. Utilized machine learning algorithms to analyze user behavior and preferences, delivering tailored product suggestions to boost sales and enhance user engagement.",
+            "technologies": [
+                "MERN",
+                "Docker",
+                "Github",
+                "Machine Learning"
+            ]
+        },
+        {
+            "name": "SNAPURL",
+            "description": "Developed a MERN stack-based application for URL shortening, featuring custom naming options and QR code generation. Enhanced usability with a sleek interface and deployed the application on a Minikube cluster for scalability.",
+            "technologies": [
+                "MERN",
+                "Docker",
+                "Kubernetes",
+                "Minikube"
+            ]
+        }
+    ],
+    "certifications": [
+        "AWS Certified Cloud Practitioner, 2025",
+        "MongoDB Developer Associate, 2025",
+        "GitHub Foundational Certificate, 2024"
+    ],
+    "languages": [],
+    "social": {
+        "linkedin": "https://www.linkedin.com/in/jayasurya5454/",
+        "github": "https://github.com/jayasurya5454",
+        "twitter": null,
+        "leetcode": "https://leetcode.com/jayasuryaM/",
+        "more_info": "https://jayasuryam.netlify.app/"
+    },
+    "achievements": [
+        "2025, 1st, AI Conclave Hackathon, IEF",
+        "2025, 2nd, HackSphere\u201925, KECAICC",
+        "2024, 3rd, KECHackathon\u201924, KECTBI",
+        "2024, 3rd, InfoQuest\u201924, GCT",
+        "2024, Finalist, Thinkathon\u201924, KECAICC"
+    ],
+    "leadership": [
+        {
+            "role": "Joint Secretary",
+            "organization": "AI Coding Club",
+            "date": "2025",
+            "achievements": []
+        },
+        {
+            "role": "Treasurer",
+            "organization": "AI Coding Club",
+            "date": "2023\u20132024",
+            "achievements": []
+        }
+    ],
+    "source_file": "JAYASURYA_Resume.pdf"
+}

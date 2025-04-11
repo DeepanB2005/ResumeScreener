@@ -1,0 +1,94 @@
+{
+    "name": "PRABAKARAN S B",
+    "email": "sbprabakaran62@gmail.com",
+    "phone": "+91 7010384271",
+    "location": null,
+    "summary": "I'm a enthusiastic Fresher as an AI developer with a strong core of Python ,C ,Java and various technologies including Machine Learning, OOP\u2019s, HTML, basics of Prompt Engineering. I am passionate about delivering innovative solutions and Continuously seeking growth opportunities through which I bring a strong commitment to excellence.",
+    "skills": [
+        "Python",
+        "C",
+        "Java",
+        "HTML",
+        "Machine Learning",
+        "OOP",
+        "Prompt Engineering"
+    ],
+    "experience": [
+        {
+            "title": null,
+            "company": "Unique Technologies",
+            "date": null,
+            "description": "Completed In plant training on learning java and python"
+        }
+    ],
+    "education": [
+        {
+            "degree": "B.Tech AI & DS",
+            "institution": "Kongu Engineering College",
+            "date": "July 2024",
+            "gpa": "8.65"
+        },
+        {
+            "degree": "Grade 12",
+            "institution": "The Ashok Leyland School, CBSE",
+            "date": "March 2023",
+            "gpa": "86.2%"
+        },
+        {
+            "degree": "Grade 10",
+            "institution": "The Ashok Leyland School, CBSE",
+            "date": "March 2021",
+            "gpa": "88.2%"
+        }
+    ],
+    "projects": [
+        {
+            "name": "Ted Talk Recommendation System Based On Collaborative Filtering",
+            "description": "The enormous flow of information on social media makes finding preferred content challenging. A machine learning-based recommender system can group similar users (collaborative filtering)to enhance the accuracy and relevance of recommendations",
+            "technologies": [
+                "Machine Learning"
+            ]
+        },
+        {
+            "name": "Library Management System",
+            "description": "This Library Management System is an terminal run system which uses Java and SQL to manage book inventory and transactions with JDBC for database connectivity. It applies object-oriented principles to create an efficient solution for real-world library management.",
+            "technologies": [
+                "Java",
+                "SQL",
+                "JDBC"
+            ]
+        }
+    ],
+    "certifications": [],
+    "languages": [
+        "English",
+        "Tamil"
+    ],
+    "social": {
+        "linkedin": "linkedin.com/in/prabakaran-s-b-4a42b9282",
+        "github": null,
+        "twitter": null,
+        "leetcode": "https://leetcode.com/PRABAKARAN_S_B_/",
+        "more_info": null
+    },
+    "achievements": [
+        "Winner, 1st Place in Paper presentation conducted by the AI Association at the Newels Competition, Kongu Engineering College,Sept 2024",
+        "Finalist, Ideathon 2024, IEF, Kongu Engineering college, Oct 2024.",
+        "Finalist, HCS , AI Coding Club (AICC) , Kongu Engineering College, Oct 2024"
+    ],
+    "leadership": [
+        {
+            "role": "Placement Co ordinator",
+            "organization": "AIDS department",
+            "date": "2024 -  Present",
+            "achievements": []
+        },
+        {
+            "role": "Executive member",
+            "organization": "IEF Kongu Engineering College",
+            "date": "Aug 2024 - Present",
+            "achievements": []
+        }
+    ],
+    "source_file": "prabakaran.pdf"
+}

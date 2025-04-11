@@ -1,17 +1,26 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'sonner';
 
-const ResumeActions: React.FC = () => {
+interface ResumeActionsProps {
+  resumeId?: string;
+}
+
+const ResumeActions: React.FC<ResumeActionsProps> = ({ resumeId }) => {
   const navigate = useNavigate();
 
   const handleJobMatchClick = () => {
     // Navigate to job recommendations page
     navigate('/jobs');
     toast.success("Redirecting to job recommendations");
+  };
+
+  const handleJobMatch = () => {
+    if (resumeId) {
+      navigate(`/job-matches?resumeId=${resumeId}`);
+    }
   };
 
   return (

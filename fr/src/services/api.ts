@@ -8,44 +8,40 @@
 const API_BASE_URL = 'http://localhost:5000';
 
 export interface ParsedResume {
-  name?: string;
-  email?: string;
-  phone?: string;
-  location?: string;
-  summary?: string;
-  skills?: string[];
-  experience?: {
-    title?: string;
-    company?: string;
-    date?: string;
-    description?: string;
-  }[];
-  education?: {
-    degree?: string;
-    institution?: string;
-    date?: string;
-    gpa?: string;
-  }[];
-  certifications?: string[];
-  projects?: {
-    name?: string;
-    description?: string;
-    technologies?: string[];
-  }[];
-  languages?: string[];
-  social?: {
-    linkedin?: string;
-    github?: string;
-    twitter?: string;
-    leetcode?: string;
-  };
-  achievements?: string[];
+  _id?: string;
   source_file?: string;
-  error?: string;
+  name: string;
+  email: string;
+  phone: string;
+  location: string;
+  summary: string;
+  skills: string[];
+  experience: Array<{
+    title: string;
+    company: string;
+    date: string;
+    description: string;
+  }>;
+  education: Array<{
+    degree: string;
+    institution: string;
+    date: string;
+    gpa?: string;
+  }>;
+  projects: Array<{
+    name: string;
+    description: string;
+    technologies: string[];
+  }>;
+  certifications: string[];
+  languages: string[];
+  achievements: string[];
 }
 
 export interface ParseResumesResponse {
-  results: ParsedResume[];
+  resumes: ParsedResume[];
+  message?: string;
+  error?: string;
 }
 
 export interface GetParsedResumeResponse {
@@ -72,7 +68,7 @@ export interface GetJobMatchesResponse {
  * @param files List of files to parse
  * @returns Promise with the parsed resume data
  */
-export async function parseResumes(files: File[]): Promise<ParseResumesResponse> {
+export const parseResumes = async (files: File[]): Promise<ParseResumesResponse> => {
   try {
     const formData = new FormData();
     files.forEach(file => {
@@ -221,6 +217,53 @@ export const getSavedResumes = async () => {
   return response.json();
 };
 
+/**
+ * Delete a resume by ID
+ * @param resumeId ID of the resume to delete
+ * @returns Promise that resolves when the resume is deleted
+ */
+export const deleteResume = async (resumeId: string): Promise<void> => {
+  const token = localStorage.getItem('token');
+  if (!token) throw new Error('No authentication token found');
+
+  const response = await fetch(`${API_BASE_URL}/api/delete-resume/${encodeURIComponent(resumeId)}`, {
+    method: 'DELETE',
+    headers: {
+      'Authorization': `Bearer ${token}`,
+      'Content-Type': 'application/json'
+    },
+    credentials: 'include'
+  });
+
+  if (!response.ok) {
+    const error = await response.json();
+    throw new Error(error.error || 'Failed to delete resume and associated files');
+  }
+};
+
+/**
+ * Delete all resumes
+ * @returns Promise that resolves when all resumes are deleted
+ */
+export const deleteAllResumes = async (): Promise<void> => {
+  const token = localStorage.getItem('token');
+  if (!token) throw new Error('No authentication token found');
+
+  const response = await fetch(`${API_BASE_URL}/api/delete-all-resumes`, {
+    method: 'DELETE',
+    headers: {
+      'Authorization': `Bearer ${token}`,
+      'Content-Type': 'application/json'
+    },
+    credentials: 'include'
+  });
+
+  if (!response.ok) {
+    const error = await response.json();
+    throw new Error(error.error || 'Failed to delete all resumes');
+  }
+};
+
 // Add the function to the default export
 export default {
   parseResumes,
@@ -229,4 +272,6 @@ export default {
   searchResumes,
   sendMessageToChatbot, // Add this line
   getSavedResumes, // Add this line
+  deleteResume, // Add this line
+  deleteAllResumes, // Add this line
 };
