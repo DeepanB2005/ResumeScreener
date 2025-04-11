@@ -1,18 +1,29 @@
-
 import React from 'react';
 import { Card } from '@/components/ui/card';
 import { Trophy } from 'lucide-react';
-import IconProvider from '@/components/IconProvider';
+import TabIcon from '@/components/resume/TabIcon';
 
 interface AchievementsTabProps {
   achievements: string[];
 }
 
 const AchievementsTab: React.FC<AchievementsTabProps> = ({ achievements }) => {
+  if (!achievements || achievements.length === 0) {
+    return (
+      <Card className="p-6 glossy-card shadow-md">
+        <h2 className="text-xl font-medium mb-4 flex items-center gap-2 border-b pb-2">
+          <Trophy className="h-5 w-5 text-yellow-500" />
+          Achievements
+        </h2>
+        <p className="text-muted-foreground">No achievements listed</p>
+      </Card>
+    );
+  }
+
   return (
     <Card className="p-6 glossy-card shadow-md">
       <h2 className="text-xl font-medium mb-4 flex items-center gap-2 border-b pb-2">
-        <IconProvider name="Trophy" size={20} className="text-yellow-500" />
+        <Trophy className="h-5 w-5 text-yellow-500" />
         Achievements
       </h2>
       <ul className="space-y-3">

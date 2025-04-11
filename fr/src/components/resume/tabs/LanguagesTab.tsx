@@ -1,8 +1,7 @@
-
 import React from 'react';
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import IconProvider from '@/components/IconProvider';
+import { Globe } from 'lucide-react';
 
 interface LanguagesTabProps {
   languages: string[];
@@ -12,7 +11,7 @@ const LanguagesTab: React.FC<LanguagesTabProps> = ({ languages }) => {
   return (
     <Card className="p-6 glossy-card shadow-md">
       <h2 className="text-xl font-medium mb-4 flex items-center gap-2 border-b pb-2">
-        <IconProvider name="Globe" size={20} className="text-primary" />
+        <Globe className="h-5 w-5 text-primary" />
         Languages
       </h2>
       <div className="flex flex-wrap gap-3">

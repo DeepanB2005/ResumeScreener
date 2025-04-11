@@ -3,7 +3,7 @@ import React from 'react';
 import { Card } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
 import { CalendarDays } from 'lucide-react';
-import IconProvider from '@/components/IconProvider';
+import { BriefcaseIcon } from 'lucide-react';
 
 interface Experience {
   title: string;
@@ -20,7 +20,7 @@ const ExperienceTab: React.FC<ExperienceTabProps> = ({ experience }) => {
   return (
     <Card className="p-6 glossy-card shadow-md">
       <h2 className="text-xl font-medium mb-4 flex items-center gap-2 border-b pb-2">
-        <IconProvider name="Briefcase" size={20} className="text-primary" />
+        <BriefcaseIcon size={20} className="text-primary" />
         Work Experience
       </h2>
       <div className="space-y-6">

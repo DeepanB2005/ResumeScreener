@@ -1,9 +1,7 @@
-
 import React from 'react';
 import { Card } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
-import { CalendarDays } from 'lucide-react';
-import IconProvider from '@/components/IconProvider';
+import { CalendarDays, GraduationCap } from 'lucide-react';
 
 interface Education {
   degree: string;
@@ -20,7 +18,7 @@ const EducationTab: React.FC<EducationTabProps> = ({ education }) => {
   return (
     <Card className="p-6 glossy-card shadow-md">
       <h2 className="text-xl font-medium mb-4 flex items-center gap-2 border-b pb-2">
-        <IconProvider name="GraduationCap" size={20} className="text-primary" />
+        <GraduationCap className="h-5 w-5 text-primary" />
         Education
       </h2>
       <div className="space-y-6">

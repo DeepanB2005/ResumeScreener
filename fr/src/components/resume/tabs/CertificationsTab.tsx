@@ -12,7 +12,7 @@ const CertificationsTab: React.FC<CertificationsTabProps> = ({ certifications })
   return (
     <Card className="p-6 glossy-card shadow-md">
       <h2 className="text-xl font-medium mb-4 flex items-center gap-2 border-b pb-2">
-        <IconProvider name="Check" size={20} className="text-primary" />
+        <Check size={20} className="text-primary" />
         Certifications
       </h2>
       <ul className="space-y-2 grid grid-cols-1 md:grid-cols-2 gap-3">

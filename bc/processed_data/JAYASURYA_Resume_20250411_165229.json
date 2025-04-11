@@ -77,20 +77,20 @@
             "name": "KUBERNETES DEPLOYMENT",
             "description": "Deployed a MERN stack application on a Minikube cluster, managing both backend and frontend services. Integrated MongoDB for efficient data storage and retrieval, ensuring scalability and secure configuration management.",
             "technologies": [
-                "Minikube",
+                "MINIKUBE",
                 "K8s",
-                "Docker",
-                "Github",
-                "MongoDB",
-                "MERN"
+                "DOCKER",
+                "GITHUB",
+                "MERN stack",
+                "MongoDB"
             ]
         },
         {
             "name": "CROP RECOMMENDATION SYSTEM",
             "description": "Developed a crop recommendation system using machine learning and real-time APIs to provide farmers with data-driven crop suggestions. Implemented algorithms for real-time processing, enhancing agricultural decision -making.",
             "technologies": [
-                "Machine Learning",
-                "API"
+                "MACHINE LEARNING",
+                "LIVE"
             ]
         },
         {
@@ -98,9 +98,9 @@
             "description": "Developed an AI-powered personalized product system for the Farm2Bag platform. Utilized machine learning algorithms to analyze user behavior and preferences, delivering tailored product suggestions to boost sales and enhance user engagement.",
             "technologies": [
                 "MERN",
-                "Docker",
-                "Github",
-                "Machine Learning"
+                "DOCKER",
+                "GITHUB",
+                "AI"
             ]
         },
         {
@@ -108,9 +108,9 @@
             "description": "Developed a MERN stack-based application for URL shortening, featuring custom naming options and QR code generation. Enhanced usability with a sleek interface and deployed the application on a Minikube cluster for scalability.",
             "technologies": [
                 "MERN",
-                "Docker",
-                "Kubernetes",
-                "Minikube"
+                "DOCKER",
+                "KUBERNETES",
+                "LIVE"
             ]
         }
     ],

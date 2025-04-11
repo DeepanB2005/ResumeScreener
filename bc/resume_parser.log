@@ -2506,3 +2506,33 @@ NotImplementedError: Collection objects do not implement truth value testing or 
 2025-04-11 11:21:26,226 - INFO - 127.0.0.1 - - [11/Apr/2025 11:21:26] "GET /get-parsed-resume HTTP/1.1" 200 -
 2025-04-11 11:21:34,779 - INFO - 127.0.0.1 - - [11/Apr/2025 11:21:34] "OPTIONS /chatbot HTTP/1.1" 200 -
 2025-04-11 11:21:36,655 - INFO - 127.0.0.1 - - [11/Apr/2025 11:21:36] "POST /chatbot HTTP/1.1" 200 -
+2025-04-11 16:45:43,609 - WARNING - Unknown option passed to Flask-CORS: allow_credentials
+2025-04-11 16:45:43,612 - INFO - Starting Flask application
+2025-04-11 16:45:43,624 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.239.231:5000
+2025-04-11 16:45:43,625 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-11 16:46:02,968 - INFO - Saved parsed data to processed_data\Sujibala_20250411_164602.json
+2025-04-11 16:46:02,969 - INFO - Successfully processed Sujibala.pdf
+2025-04-11 16:46:05,043 - INFO - Saved parsed data to processed_data\prabakaran_20250411_164605.json
+2025-04-11 16:46:05,043 - INFO - Successfully processed prabakaran.pdf
+2025-04-11 16:46:05,049 - INFO - 127.0.0.1 - - [11/Apr/2025 16:46:05] "POST /parse-resumes HTTP/1.1" 200 -
+2025-04-11 16:46:06,391 - INFO - 127.0.0.1 - - [11/Apr/2025 16:46:06] "OPTIONS /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 16:46:06,660 - INFO - Returning 8 parsed resumes
+2025-04-11 16:46:06,661 - INFO - 127.0.0.1 - - [11/Apr/2025 16:46:06] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 16:46:39,635 - INFO - Returning 8 parsed resumes
+2025-04-11 16:46:39,637 - INFO - 127.0.0.1 - - [11/Apr/2025 16:46:39] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 16:48:46,640 - INFO - No parsed resume data available
+2025-04-11 16:48:46,642 - INFO - 127.0.0.1 - - [11/Apr/2025 16:48:46] "[33mGET /get-parsed-resume HTTP/1.1[0m" 404 -
+2025-04-11 16:52:25,051 - INFO - No parsed resume data available
+2025-04-11 16:52:25,053 - INFO - 127.0.0.1 - - [11/Apr/2025 16:52:25] "[33mGET /get-parsed-resume HTTP/1.1[0m" 404 -
+2025-04-11 16:52:29,155 - INFO - No parsed resume data available
+2025-04-11 16:52:29,156 - INFO - 127.0.0.1 - - [11/Apr/2025 16:52:29] "[33mGET /get-parsed-resume HTTP/1.1[0m" 404 -
+2025-04-11 16:52:29,855 - INFO - Saved parsed data to processed_data\JAYASURYA_Resume_20250411_165229.json
+2025-04-11 16:52:29,856 - INFO - Successfully processed JAYASURYA_Resume.pdf
+2025-04-11 16:52:29,860 - INFO - 127.0.0.1 - - [11/Apr/2025 16:52:29] "POST /parse-resumes HTTP/1.1" 200 -
+2025-04-11 16:52:33,637 - INFO - Returning 1 parsed resumes
+2025-04-11 16:52:33,640 - INFO - 127.0.0.1 - - [11/Apr/2025 16:52:33] "GET /get-parsed-resume HTTP/1.1" 200 -
+2025-04-11 16:52:55,642 - INFO - Returning 1 parsed resumes
+2025-04-11 16:52:55,643 - INFO - 127.0.0.1 - - [11/Apr/2025 16:52:55] "GET /get-parsed-resume HTTP/1.1" 200 -

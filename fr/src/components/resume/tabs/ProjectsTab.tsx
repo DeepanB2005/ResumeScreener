@@ -1,9 +1,8 @@
-
 import React from 'react';
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Separator } from '@/components/ui/separator';
-import IconProvider from '@/components/IconProvider';
+import { FileText } from 'lucide-react';
 
 interface Project {
   name: string;
@@ -19,7 +18,7 @@ const ProjectsTab: React.FC<ProjectsTabProps> = ({ projects }) => {
   return (
     <Card className="p-6 glossy-card shadow-md">
       <h2 className="text-xl font-medium mb-4 flex items-center gap-2 border-b pb-2">
-        <IconProvider name="FileText" size={20} className="text-primary" />
+        <FileText className="h-5 w-5 text-primary" />
         Projects
       </h2>
       <div className="space-y-6">
