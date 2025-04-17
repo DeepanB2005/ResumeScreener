@@ -21,7 +21,6 @@ from bson import ObjectId
 from pymongo.errors import ConnectionFailure
 import shutil
 
-# Set Tesseract path
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
 # Setup logging with file and console output
